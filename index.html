@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Scrolling Nav - Start Bootstrap Template</title>
+  <title>Brett Rojec</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,18 +23,20 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Brett Rojec</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#basics">Basics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
@@ -44,46 +46,165 @@
   </nav>
 
   <header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>Welcome to Scrolling Nav</h1>
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+    <div class="row text-center">
+      <!--<div class="col"><img src="img/coffee_dog_square.jpg" class="float-right rounded-circle"></div>-->
+      <div class="col-lg-6"><img src="img/cartoon_sailing_square.jpg" class="rounded-circle float-lg-right" height="200px" width="200px"></div>
+      <div class="col-lg-6 text-lg-left">
+        <h1>Brett Rojec</h1>
+        <p class="lead"><a href="mailto:brojec@gmail.com" class="text-white">brojec@gmail.com</a> | Verona WI, 53593</p>
+      </div>
     </div>
   </header>
 
-  <section id="about">
+  <section id="basics">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+          <h2>About me</h2>
+          <p class="lead">I grew up in Colorado, got my BA in physics from <a href="https://www.colgate.edu" target="_blank">Colgate University</a> in 2014, after which I moved to Madison, WI to work at <a href="https://www.epic.com/" target="_blank">Epic Systems</a>.  After 5 years there, I'm looking for new opportunities.</p><p class="lead">I love problem solving, tinkering with computers, cooking, hockey, and just about any outdoor activity.</p>
+          <h4>Programming Languages</h4>
           <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+            <li><strong><a href="https://en.wikipedia.org/wiki/MUMPS" target="_blank">M/MUMPS</a></strong> - The main database language used by Epic. 5 years professional experience reading, programming, and debugging</li>
+            <li><strong>Python</strong> - My go-to for personal projects and quick scripts. 6 years experience across small projects, college classes, and programming for the planetarium (see <a href="#experience">work experience</a>)</li>
+            <li><strong>MATLAB</strong> - The langauge of choice for the Colgate Physics department.  2 years experience using for class and lab work</li>
+            <li><strong>C</strong> - Some exposure, used by my Operating Systems computer science class at Colage</li>
+            <li><strong>Java</strong> - Some exposure, 3 years across several high school and college computer science classes, used a little bit for some personal projects</li>
+            <li><strong>JavaScript</strong> - Used JavaScript occasionally at Epic for customizations and debugging.  Some use in college computer science and for personal projects.  Comfortable with teh basics, but I wouldn't claim to be an expert</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="bg-light">
+  <section id="experience" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Services we offer</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+          <h2>Work Experience</h2>
+          <a class="expToggleAllLink link" href="javascript:void(0)" mode="show" onclick="var i,mode;mode=$(this).attr('mode');$('#experience .collapse').collapse(mode);mode=='show' ? i=1 : i=0;$(this).attr('mode',['show','hide'][i]);$(this).text(['expand all','collapse all'][i]);">expand all</a>
+          <div class="accordion">
+            <div class="card">
+              <div id="exp-epic-head" class="container card-header btn" data-toggle="collapse" data-target="#exp-epic-body" aria-expanded="false">
+                <div class="row"><h4 class="text-left col-lg-8">Technical Solutions Engineer</h4><span class="col-lg-4 text-right">June 2014-June 2019</span></div>
+                <div class="row"><span class="col text-left text-muted">Epic Systems Corporation</span></div>
+              </div>
+              <div id="exp-epic-body" class="collapse" aria-labelledby="#exp-epic-head">
+                <div class="card-body">
+                  <p class="lead">A technical problem solving and support position.  I worked long-term directly with over 8 hospital systems to support their MyChart patient web portals</p>
+                  <h5>Key Responsibilities</h5>
+                  <ul>
+                    <li>Work with customer IT staff to setup and troubleshoot MyChart, including deployment and provisioning of Windows Servers running IIS, and creation of custom CSS branding</i>
+                    <li>Balance priorities across several customers and internal projects, communicate priorities and timelines to relevant teams and managers, and manage cross-team troubleshooting for large issues</li>
+                    <li>Create quarterly executive-level reports to communicate system status and recommend future projects</li>
+                    <li>Develop fixes to issues and new features when development team is unable to meet customer expected timelines</li>
+                  </ul>
+                  <h5>Notable Achievements</h5>
+                  <ul>
+                    <li>Designed and developed a data collection script to report on electronically released test results.  The report and data assisted in both troubleshooting for IT staff and high-level planning and understanding of the system for managers and C-suite executives, and was run regularly at 300+ customer sites</li>
+                    <li>Created and taught an orientation class for new hires on how to write and run similar data collection/reporting scripts</li>
+                    <li>Helped start a Network and Performance troubleshooting group, to teach and aid team members in understanding and troubleshooting difficult technical issues involving web server and network setup, performance, and security.  Acted as a subject matter expert for Wireshark and networking</li>
+                    <li>Took on additional role as a web API support expert, expanding needed knowledge on the team and assisting customers and coworkers in deploying, troubleshooting, and leveraging REST and SOAP APIs</li>
+                    <li>Regularly gave colleagues help on issues; voted winner of the team's Abacus Award for "always being there to count on."</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div id="exp-research-head" class="container card-header btn" data-toggle="collapse" data-target="#exp-research-body" aria-expanded="false">
+                <div class="row"><h4 class="text-left col-lg-8">Research Assistant</h4><span class="col-lg-4 text-right">Summer 2012, Fall 2013</span></div>
+                <div class="row"><span class="col text-left text-muted">Colgate University</span></div>
+              </div>
+              <div id="exp-research-body" class="collapse" aria-labelledby="#exp-research-head">
+              <div class="card-body">
+                <p class="lead">A summer research program and senior thesis class, researching spatial polarization of light in Colgate's optics lab</p>
+                <h5>Key Responsibilities</h5>
+                <ul>
+                  <li>Collected and recorded experimental data</li>
+                  <li>Presented research questions and progress to various audiences, including non-physicists, physicists, and peers in the field of optics</li>
+                </ul>
+                <h5>Notable Achievements</h5>
+                <ul>
+                  <li>Helped redesign and rebuilt the experimental apparatus, allowing for simpler and faster data collection, and the creation of modes of polarizaiton previously unavailable for study by our lab</li>
+                  <li>Wrote and optimized the software to run the computerized part of the experimental apparatus, improving the speed of collection and accuracy of experimental data</li>
+                  <li>Second author credit in the paper published jointly between our lab and a sister lab: <a target="_blank" href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.89.031801">Generation of isolated asymmetric umbilics in light’s polarization (Phys. Rev. A 89, 031801(R))</a></li>
+                </ul>
+              </div>
+            </div> 
+            <!--
+            <div class="card">
+              <div id="exp-VALUE-head" class="container card-header btn" data-toggle="collapse" data-target="#exp-VALUE-body" aria-expanded="false">
+                <div class="row"><h4 class="text-left col-lg-8">$TITLE</h4><span class="col-lg-4 text-right">$DATES</span></div>
+                <div class="row"><span class="col text-left text-muted">$COMPANY</span></div>
+              </div>
+              <div id="exp-VALUE-body" class="collapse" aria-labelledby="#exp-VALUE-head">
+              <div class="card-body">
+                <p class="lead">$SUMMARY</p>
+                <h5>Key Responsibilities</h5>
+                <ul>
+                  <li></li>
+                </ul>
+                <h5>Notable Achievements</h5>
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+            </div> 
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Personal Projects</h2>
+          <p class="lead">I'm passionate about learning new things, especially technologies.  Here is a list of live or in progress things I've done in my home lab</p>
+          <h3>Live/finished</h3>
+          <ul>
+            <li>
+              <h4>Online Resume (this site)</h4>
+              <p>A simple website under my domain name, to act as a quick and easy r&eacute;sum&eacute; and showcase for potential employers.<br/><strong>Technical Info:</strong></br>A simple static HTTPS page using bootstrap, and running on Nginx in a Docker container on AWS, secured automatically by Certbot and LetsEncrypt</p>
+            </li>
+            <li>
+              <h4>Docker Server</h4>
+              <p>An Ubuntu-server installation running Docker, to serve as a playground and non-PRD environment.  Built on salvaged parts from old computers friends donated.</p>
+            </li>
+            <li>
+              <h4>VM Server</h4>
+              <p>An Ubuntu-server installation running KVM and Libvirt/virt-manager, for any random VM I want.  Used primarily for development; most things here will probably migrate to Docker, now I've gotten that up and running.</p>
+            </li>
+            <li>
+              <h4>Mumble Server</h4>
+              <p>A simple VOIP server hosted on a Raspberry Pi and secured by LetsEncrypt</p>
+            </li>
+          </ul>
+          <h3>In Progress</h3>
+          <ul>
+            <li>
+              <h4>Cat Food Tracker</h4>
+              <p>My cat is sneaky, and will pretend he hasn't been fed if he sees a human around who didn't feed him.  This is a simple Django app with Postgresql backend to allow me and my housemates to track when he's been fed, and not fall victim to his lies.  Currently hosted in a container on my LAN, with code stored in a private Github repository (link available upon request).</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+
+  <section id="contact" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          <h2>Contact me</h2>
+          <ul>
+            <li>email: <a href="mailto:brojec@gmail.com">brojec@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/brett-rojec-08404841/" target="_blank">Brett Rojec</a></li>
+            <li>Github: <a href="https://www.github.com/brettrojec" target="_blank">github.com/brettrojec</a></li>
+            <li>Dockerhub: <a href="https://hub.docker.com/u/brettrojec" target="_blank">hub.docker.com/u/brettrojec</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -92,7 +213,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Brett Rojec 2019<br/>Template credit: <a href="https://startbootstrap.com/templates/scrolling-nav/" target="_blank">startbootstrap.com</a></p>
     </div>
     <!-- /.container -->
   </footer>
